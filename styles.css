@@ -19,6 +19,10 @@
     padding: 0;
 }
 
+h1, h2, h3, p {
+    margin-block: 0;
+}
+
 ul[class],
 ol[class] {
     list-style: none;
@@ -75,11 +79,63 @@ body::after {
 /* Main Styling */
 
 .container {
-    width: 30%;
+    width: 80%;
+    max-width: 350px;
     background-color: white;
     z-index: 2;
+    border-radius: 10px;
+    overflow: hidden;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+
+    box-shadow: 5px 5px 40px -10px var(--clr-primary-dark-blue)
 }
+
+.profile-photo {
+    position: absolute;
+    width: 30%;
+    border-radius: 50%;
+    outline: 5px solid white;
+    transform: translateY(85%);
+}
+
+.personal-data {
+    margin-top: 5rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.city {
+    font-size: .9rem;
+    font-weight: 400;
+    color: var(--clr-neutral-gray);
+    margin-top: .3rem;
+    margin-bottom: 1.8rem;
+}
+
+.stats {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    padding: 2rem;
+    border-top: 1px solid hsla(0, 0%, 59%, .2);
+}
+
+.stat {
+    text-align: center;
+    width: 30%;
+}
+
+.stat-name {
+    color: var(--clr-neutral-gray);
+    font-size: .8rem;
+}
+
 
 
 
