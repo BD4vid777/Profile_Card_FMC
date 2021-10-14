@@ -1,0 +1,69 @@
+:root {
+    --ff-kumbh: 'Kumbh Sans', sans-serif;
+
+    --fw400: 400;
+    --fw700: 700;
+
+    --clr-primary-dark-cyan: hsl(185, 75%, 39%);
+    --clr-primary-dark-blue: hsl(229, 23%, 23%);
+    --clr-primary-grayish-blue: hsl(227, 10%, 46%);
+
+    --clr-neutral-gray: hsl(0, 0%, 59%);
+}
+
+/* reset */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: var(--ff-kumbh);
+    font-size: 18px; /* Name and Stats */
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+/* Main Styling */
+
+
+
+
+
+
+/* Footer */
+
+.attribution {
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+    font-size: .750rem;
+    text-align: center;
+    color: red;
+}
+
+.attribution a {
+    color: red;
+}
