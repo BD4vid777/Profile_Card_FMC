@@ -36,16 +36,50 @@ img {
 }
 
 body {
-    background-color: whitesmoke;
+    position: relative;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+
+    background-color: var(--clr-primary-dark-cyan);
     font-family: var(--ff-kumbh);
     font-size: 18px; /* Name and Stats */
     font-weight: 400;
     line-height: 1.6;
+    z-index: 0;
+
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("images/bg-pattern-top.svg");
+    background-repeat: no-repeat;
+    background-position: -250px -400px;
+    z-index: 1;
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat;
+    background-position: 750px 300px;
+    z-index: 1;
 }
 
 /* Main Styling */
 
+.container {
+    width: 30%;
+    background-color: white;
+    z-index: 2;
 
+}
 
 
 
@@ -61,9 +95,9 @@ body {
 
     font-size: .750rem;
     text-align: center;
-    color: red;
+    color: white;
 }
 
 .attribution a {
-    color: red;
+    color: whitesmoke;
 }
